@@ -1,0 +1,404 @@
+body {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background: #0A090A url(../img/main-bg.png) no-repeat top center / contain;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-bottom: 30%;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    flex: .8;
+}
+
+.search-input {
+    flex: 1;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 5px;
+    padding: 12px 18px;
+    border: none;
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+    color: #AEAEAE;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: #AEAEAE;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #AEAEAE;
+}
+
+:-moz-placeholder { /* Firefox 4 - 18 */
+    color: #AEAEAE;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    padding: 8px 18px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 7px;
+}
+
+.title-en {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+    color: #787878;
+    margin-bottom: 38px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.movie-info {
+    display: flex;
+    align-items: center;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    background: #FFFFFF;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+
+.country {
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 33px;
+}
+
+.play,
+.more {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.play:hover,
+.more:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.play:before,
+.more:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(../img/play.svg) no-repeat center / cover;
+}
+
+.play:before {
+    margin-right: 15px;
+}
+
+.more:after {
+    margin-left: 15px;
+    transform: rotate(90deg);
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #000;
+    padding: 3% 4%;
+}
+
+.short-info {
+    margin-right: 3%;
+}
+
+.poster {
+    display: block;
+    margin-top: -40%;
+    margin-bottom: 19px;
+}
+
+.button {
+    background: #FF8F27;
+    padding: 10px 44px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+}
+
+.actors-title {
+    padding-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.actors-list {
+    margin: 0;
+    list-style: none;
+    padding-left: 15px;
+    text-decoration: underline;
+    line-height: 150%;
+}
+
+.full-info {
+    flex: .97;
+}
+
+.full-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.tabs-content {
+    margin-right: 70px;
+}
+
+.tabs-item {
+    color: #000;
+    text-decoration: none;
+    margin-right: 4%;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.tabs-item:last-child {
+    margin-right: 0;
+}
+
+.tabs-item:hover,
+.tabs-item.active {
+    color: #FF8F27;
+    text-decoration: none;
+}
+
+.tabs-content-item {
+    display: none;
+}
+
+.tabs-content-item.active {
+    display: block;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 0; 
+}
+
+.subscribe-form {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.subscribe-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.subscribe-input {
+    background: rgba(196, 196, 196, 0.5);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 12px 18px;
+    border: none;
+    color: #AEAEAE;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.subscribe-button {
+    background: #FF8F27;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    padding: 12px;
+}
+
+.premiers {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000;
+}
+
+.premiers-item {
+    margin-bottom: 22px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .tabs-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .tabs {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .tabs-item {
+        flex-basis: 20%;
+        line-height: 2;
+    }
+
+    .tabs-content {
+        margin-bottom: 5%;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .full-content {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: auto;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    .tabs-content {
+        margin-right: 0;
+    }
+
+    .tabs-item {
+        flex-basis: 33%;
+    }
+}
+
+@media (max-width: 578px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .search {
+        flex-basis: 100%;
+        order: 3;
+        margin-top: 5%;
+    }
+
+    .content {
+        flex-wrap: wrap;
+    }
+
+    .actors-list,
+    .actors-title {
+        display: none;
+    }
+
+    .short-info {
+        margin-bottom: 5%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .movie-info {
+        flex-wrap: wrap;
+    }
+
+    .play {
+        flex-basis: 100%;
+        margin-top: 10%;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    .poster {
+        display: inline-block;
+        margin-top: -20%;
+        width: 100%;
+    }
+}
